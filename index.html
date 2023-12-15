@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sorting Algorithm Visualizer</title>
+</head>
+<body>
+  <h1>Comparison Sorting Algorithms</h1>
+  
+  <!-- Buttons for Algorithms -->
+  <button onclick="applySorting('insertion')">Insertion Sort</button>
+  <button onclick="applySorting('selection')">Selection Sort</button>
+  <button onclick="applySorting('bubble')">Bubble Sort</button>
+  <button onclick="applySorting('quick')">Quick Sort</button>
+  <button onclick="applySorting('merge')">Merge Sort</button>
+  <button onclick="applySorting('shell')">Shell Sort</button>
+
+  <!-- Selector for Animation Speed -->
+  <label for="speedSelector">Animation Speed:</label>
+  <select id="speedSelector" onchange="changeSpeed()">
+    <option value="slow">Slow</option>
+    <option value="medium">Medium</option>
+    <option value="fast">Fast</option>
+  </select>
+
+  <!-- Play/Pause Button -->
+  <button onclick="toggleAnimation()">Play/Pause</button>
+
+  <!-- Input Fields for Bar Graph -->
+  <label for="barHeight">Bar Height:</label>
+  <input type="number" id="barHeight">
+
+  <label for="barWidth">Bar Width:</label>
+  <input type="number" id="barWidth">
+
+  <!-- Canvas for Bar Graph -->
+  <canvas id="barCanvas" width="800" height="400"></canvas>
+
+  <!-- Buttons for Canvas Size and Play/Pause -->
+  <button onclick="changeSize()">Change Size</button>
+  <button onclick="randomizeArray()">Randomize Array</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
